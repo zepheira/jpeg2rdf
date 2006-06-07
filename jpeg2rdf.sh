@@ -50,10 +50,9 @@ esac
 # ----- Set Local Variables ( used to minimize cut/paste) ---------------------
 
 JAVA="$JAVA_HOME/bin/java"
-PARSER="-Dorg.xml.sax.parser=org.apache.xerces.parsers.SAXParser"
 LOADER="Loader"
 LOADER_LIB="./tools/loader/classes"
-MAIN="-Dloader.main.class=edu.mit.simile.rdfizer.oai.Main"
+MAIN="-Dloader.main.class=edu.mit.simile.rdfizer.jpeg.Main"
 LIBRARIES="-Dloader.jar.repositories=target/classes:target:lib"
 
 # ----- Do the action ----------------------------------------------------------

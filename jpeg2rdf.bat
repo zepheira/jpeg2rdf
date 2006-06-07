@@ -29,7 +29,7 @@ set JAVA_OPTIONS=-Xms32M -Xmx512M
 
 set CP=.\tools\loader\classes
 
-"%JAVA_HOME%\bin\java.exe" %JAVA_OPTIONS% %JAVA_ARGS% -classpath "%CP%" -Dorg.xml.sax.parser=org.apache.xerces.parsers.SAXParser -Dloader.jar.repositories=target/classes;target;lib -Dloader.main.class=edu.mit.simile.rdfizer.oai.Main Loader %2 %3 %4 %5 %6 %7 %8 %9
+"%JAVA_HOME%\bin\java.exe" %JAVA_OPTIONS% %JAVA_ARGS% -classpath "%CP%" -Dorg.xml.sax.parser=org.apache.xerces.parsers.SAXParser -Dloader.jar.repositories=target/classes;target;lib -Dloader.main.class=edu.mit.simile.rdfizer.jpeg.Main Loader %2 %3 %4 %5 %6 %7 %8 %9
 goto end
 
 :: ----- End -------------------------------------------------------------------
