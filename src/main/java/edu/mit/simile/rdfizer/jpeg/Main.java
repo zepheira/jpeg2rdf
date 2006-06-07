@@ -111,7 +111,7 @@ public class Main {
                         while (j.hasNext()) {
                             Tag tag = (Tag) j.next();
                             logger.info("   found metadata tag: '" + tag.getTagName() + "' -> '" + tag.getDescription() + "' [" + tag.getTagType() + "]");
-                            String predicate = tag.getTagName().toLowerCase().replaceAll("[ /()]","_");
+                            String predicate = tag.getTagName().toLowerCase().replaceAll("[ /()&<>]","_");
                             writer.write("  exif:" + predicate + " \"" + tag.getDescription().replaceAll("\"","\\\"").replaceAll("\n","\\\\n") + "\" ;\n");
                         }
                     }
