@@ -7,7 +7,7 @@
   <groupId>edu.mit.simile</groupId>
   <artifactId>jpeg2rdf</artifactId>
   <name>SIMILE jpeg2rdf</name>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <url>http://simile.mit.edu/RDFizers/jpeg2rdf/</url>
   <repositories>
     <repository>
