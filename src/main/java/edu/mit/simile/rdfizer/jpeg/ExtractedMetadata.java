@@ -6,6 +6,8 @@ import java.util.Set;
 import java.util.Vector;
 
 public class ExtractedMetadata {
+	public static String TYPE    = Extractor.EXIF_NS + "Image";
+
 	private HashMap<String, List> _metadata;
 	
 	public ExtractedMetadata() {

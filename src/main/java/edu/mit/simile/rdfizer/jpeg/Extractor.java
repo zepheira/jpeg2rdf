@@ -18,7 +18,6 @@ import org.apache.log4j.Logger;
 public class Extractor {
 	public static String EXIF_NS = "http://simile.mit.edu/2006/06/ontologies/exif#";
 	public static String RDF_NS  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
-	public static String TYPE    = EXIF_NS + "Image";
 	
 	public static ExtractedMetadata extractFromFile(File file) throws Exception {
     	return extractFromFile(file, null);
