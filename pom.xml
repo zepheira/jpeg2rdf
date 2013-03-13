@@ -9,23 +9,6 @@
   <name>SIMILE jpeg2rdf</name>
   <version>1.1-SNAPSHOT</version>
   <url>http://simile.mit.edu/RDFizers/jpeg2rdf/</url>
-  <repositories>
-    <repository>
-      <id>simile.mit.edu</id>
-      <url>http://simile.mit.edu/maven-proxy</url>
-    </repository>
-  </repositories>
-  <distributionManagement>
-    <repository>
-      <id>simile.mit.edu</id>
-      <url>scpexe://simile.mit.edu/var/maven</url>
-    </repository>
-  </distributionManagement>
-  <scm>
-    <connection>scm:svn:http://simile.mit.edu/repository/RDFizers/jpeg2rdf/</connection>
-    <developerConnection>scm:svn:http://simile.mit.edu/repository/RDFizers/jpeg2rdf/</developerConnection>
-    <url>http://simile.mit.edu/viewsvn/RDFizers/jpeg2rdf/</url>
-  </scm>
   <build>
    <plugins>
      <plugin>
