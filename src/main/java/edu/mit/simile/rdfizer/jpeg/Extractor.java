@@ -44,13 +44,9 @@ public class Extractor {
 	
 	static ExtractedMetadata extractMetadata(Metadata metadata, String uri, Logger logger) throws Exception {
 		ExtractedMetadata propsVals = new ExtractedMetadata();
-		Iterator i = metadata.getDirectoryIterator();
-        while (i.hasNext()) {
-            Directory directory = (Directory) i.next();
+        for (Directory directory : metadata.getDirectories()) {
             if (null != logger) logger.info ("  found metadata group: '" + directory.getName() + "'");
-            Iterator j = directory.getTagIterator();
-            while (j.hasNext()) {
-                Tag tag = (Tag) j.next();
+            for (Tag tag : directory.getTags()) {
                 if (null != logger) logger.info("   found metadata tag: '" + tag.getTagName() + "' -> '" + tag.getDescription() + "' [" + tag.getTagType() + "]");
                 String predicate = EXIF_NS + tag.getTagName().toLowerCase().replaceAll("[ /()&<>]","_");
                 propsVals.addPropertyValue(predicate, tag.getDescription());

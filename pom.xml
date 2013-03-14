@@ -59,9 +59,9 @@
       <version>1.2.13</version>
     </dependency>
     <dependency>
-      <groupId>metadata-extractor</groupId>
+      <groupId>com.drewnoakes</groupId>
       <artifactId>metadata-extractor</artifactId>
-      <version>2.3.1</version>
+      <version>2.6.2</version>
     </dependency>
   </dependencies>
 </project>
