@@ -2,7 +2,6 @@ package edu.mit.simile.rdfizer.jpeg;
 
 import java.io.File;
 import java.io.InputStream;
-import java.util.Iterator;
 
 import com.drew.imaging.jpeg.JpegMetadataReader;
 import com.drew.metadata.Directory;
