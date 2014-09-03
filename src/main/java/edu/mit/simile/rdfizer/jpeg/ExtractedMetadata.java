@@ -8,10 +8,10 @@ import java.util.Vector;
 public class ExtractedMetadata {
 	public static String TYPE    = Extractor.EXIF_NS + "Image";
 
-	private HashMap<String, List> _metadata;
+	private HashMap<String, List<String>> _metadata;
 	
 	public ExtractedMetadata() {
-		_metadata = new HashMap<String, List>();
+		_metadata = new HashMap<String, List<String>>();
 	}
 	
 	public void addPropertyValue(String prop, String val) {
